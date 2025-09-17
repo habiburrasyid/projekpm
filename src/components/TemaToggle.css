@@ -1,0 +1,87 @@
+/* Default Light Mode */
+.app {
+  background-color: #f9fafb;
+  color: #111827;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark Mode */
+.app.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card styling */
+.kartu-siswa {
+  border: 2px solid #71fafe;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f0f8ff;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.kartu-siswa:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card dark mode */
+.app.dark .kartu-siswa {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+/* Container Toggle */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Tombol Toggle */
+.toggle-button {
+  background-color: #2563eb; /* biru */
+  color: white;
+  border: none;
+  border-radius: 90px;
+  padding: 25px 45px; /* kecil */
+  font-size: 20px; /* teks kecil */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.toggle-button:hover {
+  background-color: #1d4ed8;
+}

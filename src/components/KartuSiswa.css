@@ -1,0 +1,34 @@
+.kartu-siswa {
+  border: 2px solid #71fafe;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cards {
+  display: flex;
+  justify-content: center; /* rata tengah */
+  align-items: flex-start;
+  flex-wrap: wrap; /* biar otomatis turun ke bawah jika layar kecil */
+  gap: 20px; /* jarak antar card */
+  padding: 20px;
+}
+
+/* Card siswa */
+.kartu-siswa {
+  border: 2px solid #71fafe;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.kartu-siswa:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
